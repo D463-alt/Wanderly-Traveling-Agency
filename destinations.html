@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destinations | Wanderly Travel Agency</title>
+<meta name="description" content="Browse 120+ handpicked travel destinations with Wanderly.">
+<link rel="icon" href="data:,">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-travel sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Wander<span>ly</span></a>
+    <input type="checkbox" id="navToggle" class="nav-toggle-input" aria-hidden="true">
+    <label for="navToggle" class="navbar-toggler" role="button" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </label>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a class="btn btn-coral btn-sm" href="contact.html">Book Your Trip</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow" style="color:var(--brass-light);">120+ Destinations</div>
+    <h1 class="font-display">Explore Amazing Destinations</h1>
+    <p>From alpine peaks to island lagoons — find the place that's calling you.</p>
+  </div>
+</section>
+
+<!-- FEATURED DESTINATION -->
+<section class="section-sm bg-cream">
+  <div class="container">
+    <div class="row g-0 shadow-soft rounded-travel overflow-hidden">
+      <div class="col-lg-6">
+        <img src="https://picsum.photos/seed/featured-santorini/800/600" class="w-100 h-100" style="object-fit:cover;" alt="Santorini, Greece cliffside villages">
+      </div>
+      <div class="col-lg-6 bg-teal text-white p-5 d-flex flex-column justify-content-center">
+        <div class="eyebrow" style="color:var(--brass-light);">Featured This Month</div>
+        <h2 class="font-display">Santorini, Greece</h2>
+        <p style="color:var(--sand-100);">Whitewashed villages perched above volcanic cliffs, sunsets over the caldera, and some of the best seafood in the Aegean. Our 6-day Santorini escape includes private wine tastings and a catamaran cruise.</p>
+        <div class="d-flex align-items-center gap-3 mt-2">
+          <span class="font-mono fs-5">$1,899</span>
+          <span class="rating-stars">★ 4.9</span>
+        </div>
+        <a href="contact.html" class="btn btn-coral mt-4 align-self-start">Explore Santorini</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALL DESTINATIONS -->
+<section class="section bg-sand-100">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="eyebrow justify-content-center">Pick A Direction</div>
+      <h2 class="font-display">Browse All Destinations</h2>
+    </div>
+    <div class="row g-4" id="allDest">
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-paris/500/400" alt="Paris, France">
+        <span class="price-tag">$1,299</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Paris</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Paris, France</div>
+        <p class="small text-secondary mb-2">Romance, art, and riverside evenings.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.9</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-dubai/500/400" alt="Dubai, UAE">
+        <span class="price-tag">$1,599</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Dubai</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Dubai, UAE</div>
+        <p class="small text-secondary mb-2">Desert dunes meet glass skyscrapers.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.8</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-switzerland/500/400" alt="Interlaken, Switzerland">
+        <span class="price-tag">$2,199</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Switzerland</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Interlaken, Switzerland</div>
+        <p class="small text-secondary mb-2">Alpine peaks and glacier-blue lakes.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 5.0</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-turkey/500/400" alt="Cappadocia, Turkey">
+        <span class="price-tag">$999</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Turkey</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Cappadocia, Turkey</div>
+        <p class="small text-secondary mb-2">Sunrise balloons over fairy chimneys.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.7</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-bali/500/400" alt="Ubud, Indonesia">
+        <span class="price-tag">$899</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Bali</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Ubud, Indonesia</div>
+        <p class="small text-secondary mb-2">Rice terraces and temple courtyards.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.8</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-maldives/500/400" alt="Malé, Maldives">
+        <span class="price-tag">$2,499</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Maldives</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Malé, Maldives</div>
+        <p class="small text-secondary mb-2">Overwater villas, endless blue.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.9</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-japan/500/400" alt="Kyoto, Japan">
+        <span class="price-tag">$1,799</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Japan</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Kyoto, Japan</div>
+        <p class="small text-secondary mb-2">Ancient shrines beneath cherry blossoms.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.9</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-italy/500/400" alt="Amalfi, Italy">
+        <span class="price-tag">$1,399</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Italy</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Amalfi, Italy</div>
+        <p class="small text-secondary mb-2">Cliffside villages and long dinners.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.8</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-santorini2/500/400" alt="Oia, Greece">
+        <span class="price-tag">$1,899</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Santorini</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Oia, Greece</div>
+        <p class="small text-secondary mb-2">Whitewashed cliffs above the caldera.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.9</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-marrakech/500/400" alt="Marrakech, Morocco">
+        <span class="price-tag">$1,099</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Marrakech</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Marrakech, Morocco</div>
+        <p class="small text-secondary mb-2">Spice souks and desert riads.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.6</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-iceland/500/400" alt="Reykjavik, Iceland">
+        <span class="price-tag">$1,999</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Iceland</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Reykjavik, Iceland</div>
+        <p class="small text-secondary mb-2">Northern lights and glacier lagoons.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.9</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-peru/500/400" alt="Cusco, Peru">
+        <span class="price-tag">$1,499</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Peru</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Cusco, Peru</div>
+        <p class="small text-secondary mb-2">Andean peaks and Machu Picchu at dawn.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.8</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-thailand/500/400" alt="Phuket, Thailand">
+        <span class="price-tag">$999</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Thailand</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Phuket, Thailand</div>
+        <p class="small text-secondary mb-2">Limestone cliffs and turquoise coves.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.7</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-egypt/500/400" alt="Cairo, Egypt">
+        <span class="price-tag">$1,199</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <h5 class="font-display mb-1">Egypt</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Cairo, Egypt</div>
+        <p class="small text-secondary mb-2">Pyramids, temples, and Nile sunsets.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="rating-stars">★ 4.6</span>
+          <a href="contact.html" class="btn btn-outline-teal btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- TRAVEL TIPS -->
+<section class="section bg-cream">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="eyebrow justify-content-center">Before You Go</div>
+      <h2 class="font-display">Travel Tips</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="d-flex gap-3"><i class="bi bi-passport fs-3 text-coral"></i><div><h6 class="font-display">Check Passport Validity</h6><p class="small text-secondary mb-0">Most countries require 6 months of validity beyond your travel dates.</p></div></div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex gap-3"><i class="bi bi-currency-exchange fs-3 text-coral"></i><div><h6 class="font-display">Carry Some Local Cash</h6><p class="small text-secondary mb-0">Cards aren't accepted everywhere — keep small bills for markets and taxis.</p></div></div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex gap-3"><i class="bi bi-umbrella fs-3 text-coral"></i><div><h6 class="font-display">Pack For The Season</h6><p class="small text-secondary mb-0">Check the local forecast a week out — weather shifts fast in the mountains.</p></div></div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex gap-3"><i class="bi bi-heart-pulse fs-3 text-coral"></i><div><h6 class="font-display">Get Travel Insurance</h6><p class="small text-secondary mb-0">Covers cancellations, delays, and unexpected medical costs abroad.</p></div></div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex gap-3"><i class="bi bi-translate fs-3 text-coral"></i><div><h6 class="font-display">Learn A Few Phrases</h6><p class="small text-secondary mb-0">"Hello," "thank you," and "how much" go a long way anywhere.</p></div></div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex gap-3"><i class="bi bi-camera fs-3 text-coral"></i><div><h6 class="font-display">Back Up Your Photos</h6><p class="small text-secondary mb-0">Cloud-sync daily so a lost phone doesn't mean lost memories.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section bg-teal">
+  <div class="container text-center">
+    <h2 class="font-display">Found Your Dream Destination?</h2>
+    <p class="mb-4" style="color:var(--sand-100);">Reserve your trip today before the best deals disappear.</p>
+    <a href="contact.html" class="btn btn-coral">Book Now</a>
+  </div>
+</section>
+
+<footer class="footer-travel">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <a class="navbar-brand text-white mb-3 d-inline-block" href="index.html" style="font-size:1.5rem;">Wander<span class="text-coral">ly</span></a>
+        <p class="mb-3" style="max-width:300px;">Crafting unforgettable journeys since 2011 — from quiet beach mornings to city lights that never dim.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Company</h6>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Destinations</h6>
+        <ul>
+          <li><a href="destinations.html">Dubai</a></li>
+          <li><a href="destinations.html">Switzerland</a></li>
+          <li><a href="destinations.html">Turkey</a></li>
+          <li><a href="destinations.html">Bali</a></li>
+          <li><a href="destinations.html">Maldives</a></li>
+          <li><a href="destinations.html">Paris</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6>Newsletter</h6>
+        <p class="small mb-3">Travel tips & offers, once a week.</p>
+        <form class="newsletter-form">
+          <div class="d-flex flex-column gap-2">
+            <input type="email" class="newsletter-input rounded-1" placeholder="Your email" required>
+            <button type="button" class="btn btn-coral btn-sm">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <div>&copy; 2026 Wanderly Travel Agency. All Rights Reserved.</div>
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Help Center</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body></html>

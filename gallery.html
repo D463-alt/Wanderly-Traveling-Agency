@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Wanderly Travel Agency</title>
+<meta name="description" content="Browse travel photography from beaches, mountains, cities, wildlife, and more.">
+<link rel="icon" href="data:,">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-travel sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Wander<span>ly</span></a>
+    <input type="checkbox" id="navToggle" class="nav-toggle-input" aria-hidden="true">
+    <label for="navToggle" class="navbar-toggler" role="button" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </label>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a class="btn btn-coral btn-sm" href="contact.html">Book Your Trip</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow" style="color:var(--brass-light);">Moments Worth Keeping</div>
+    <h1 class="font-display">Travel Moments Gallery</h1>
+    <p>A visual journal from our travelers, across every corner of the map.</p>
+  </div>
+</section>
+
+<input type="radio" name="galFilter" id="f-gal-all" class="filter-input" checked>
+<input type="radio" name="galFilter" id="f-gal-beaches" class="filter-input">
+<input type="radio" name="galFilter" id="f-gal-mountains" class="filter-input">
+<input type="radio" name="galFilter" id="f-gal-cities" class="filter-input">
+<input type="radio" name="galFilter" id="f-gal-wildlife" class="filter-input">
+<input type="radio" name="galFilter" id="f-gal-hotels" class="filter-input">
+<input type="radio" name="galFilter" id="f-gal-adventures" class="filter-input">
+
+<section class="section bg-cream pb-0">
+  <div class="container text-center">
+    <label class="pill" for="f-gal-all">All</label>
+    <label class="pill" for="f-gal-beaches">Beaches</label>
+    <label class="pill" for="f-gal-mountains">Mountains</label>
+    <label class="pill" for="f-gal-cities">Cities</label>
+    <label class="pill" for="f-gal-wildlife">Wildlife</label>
+    <label class="pill" for="f-gal-hotels">Hotels</label>
+    <label class="pill" for="f-gal-adventures">Adventures</label>
+  </div>
+</section>
+
+<section class="section bg-cream">
+  <div class="container">
+    <div class="row g-3" id="galleryGrid">
+  <div class="col-6 col-md-4 col-lg-3" data-category="beaches">
+    <div class="gallery-item" style="height:280px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-beach1/500/280" alt="Maldives Overwater Villas">
+      <div class="gallery-overlay"><span>Maldives Overwater Villas</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="mountains">
+    <div class="gallery-item" style="height:380px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-mtn1/500/380" alt="Swiss Alps at Dawn">
+      <div class="gallery-overlay"><span>Swiss Alps at Dawn</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="cities">
+    <div class="gallery-item" style="height:280px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-city1/500/280" alt="Tokyo Nights">
+      <div class="gallery-overlay"><span>Tokyo Nights</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="wildlife">
+    <div class="gallery-item" style="height:340px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-wild1/500/340" alt="Serengeti Lions">
+      <div class="gallery-overlay"><span>Serengeti Lions</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="hotels">
+    <div class="gallery-item" style="height:280px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-hotel1/500/280" alt="Santorini Cliffside Suite">
+      <div class="gallery-overlay"><span>Santorini Cliffside Suite</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="adventures">
+    <div class="gallery-item" style="height:340px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-adv1/500/340" alt="Cappadocia Balloon Ride">
+      <div class="gallery-overlay"><span>Cappadocia Balloon Ride</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="beaches">
+    <div class="gallery-item" style="height:340px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-beach2/500/340" alt="Phuket Turquoise Coves">
+      <div class="gallery-overlay"><span>Phuket Turquoise Coves</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="mountains">
+    <div class="gallery-item" style="height:280px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-mtn2/500/280" alt="Patagonia Trail">
+      <div class="gallery-overlay"><span>Patagonia Trail</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="cities">
+    <div class="gallery-item" style="height:340px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-city2/500/340" alt="Paris Rooftops">
+      <div class="gallery-overlay"><span>Paris Rooftops</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="wildlife">
+    <div class="gallery-item" style="height:280px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-wild2/500/280" alt="Kruger Elephant Herd">
+      <div class="gallery-overlay"><span>Kruger Elephant Herd</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="hotels">
+    <div class="gallery-item" style="height:340px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-hotel2/500/340" alt="Bali Jungle Villa">
+      <div class="gallery-overlay"><span>Bali Jungle Villa</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="adventures">
+    <div class="gallery-item" style="height:280px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-adv2/500/280" alt="Costa Rica Zipline">
+      <div class="gallery-overlay"><span>Costa Rica Zipline</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="beaches">
+    <div class="gallery-item" style="height:300px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-beach3/500/300" alt="Amalfi Coast Cove">
+      <div class="gallery-overlay"><span>Amalfi Coast Cove</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="mountains">
+    <div class="gallery-item" style="height:300px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-mtn3/500/300" alt="Iceland Glacier Lagoon">
+      <div class="gallery-overlay"><span>Iceland Glacier Lagoon</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="cities">
+    <div class="gallery-item" style="height:300px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-city3/500/300" alt="Marrakech Medina">
+      <div class="gallery-overlay"><span>Marrakech Medina</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="wildlife">
+    <div class="gallery-item" style="height:300px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-wild3/500/300" alt="Galápagos Iguanas">
+      <div class="gallery-overlay"><span>Galápagos Iguanas</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="hotels">
+    <div class="gallery-item" style="height:300px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-hotel3/500/300" alt="Dubai Skyline Suite">
+      <div class="gallery-overlay"><span>Dubai Skyline Suite</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="adventures">
+    <div class="gallery-item" style="height:300px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-adv3/500/300" alt="Peru Trekking Trail">
+      <div class="gallery-overlay"><span>Peru Trekking Trail</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="beaches">
+    <div class="gallery-item" style="height:300px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-beach4/500/300" alt="Zanzibar Sunset">
+      <div class="gallery-overlay"><span>Zanzibar Sunset</span></div>
+    </div>
+  </div>
+  <div class="col-6 col-md-4 col-lg-3" data-category="cities">
+    <div class="gallery-item" style="height:300px;">
+      <img src="https://picsum.photos/seed/wanderly-gal-city4/500/300" alt="Kyoto Lantern Streets">
+      <div class="gallery-overlay"><span>Kyoto Lantern Streets</span></div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<section class="section bg-teal">
+  <div class="container text-center">
+    <h2 class="font-display">Your Journey Could Be Next</h2>
+    <p class="mb-4" style="color:var(--sand-100);">Book today and create memories worth sharing.</p>
+    <a href="contact.html" class="btn btn-coral">Book Today</a>
+  </div>
+</section>
+
+<footer class="footer-travel">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <a class="navbar-brand text-white mb-3 d-inline-block" href="index.html" style="font-size:1.5rem;">Wander<span class="text-coral">ly</span></a>
+        <p class="mb-3" style="max-width:300px;">Crafting unforgettable journeys since 2011 — from quiet beach mornings to city lights that never dim.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Company</h6>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Destinations</h6>
+        <ul>
+          <li><a href="destinations.html">Dubai</a></li>
+          <li><a href="destinations.html">Switzerland</a></li>
+          <li><a href="destinations.html">Turkey</a></li>
+          <li><a href="destinations.html">Bali</a></li>
+          <li><a href="destinations.html">Maldives</a></li>
+          <li><a href="destinations.html">Paris</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6>Newsletter</h6>
+        <p class="small mb-3">Travel tips & offers, once a week.</p>
+        <form class="newsletter-form">
+          <div class="d-flex flex-column gap-2">
+            <input type="email" class="newsletter-input rounded-1" placeholder="Your email" required>
+            <button type="button" class="btn btn-coral btn-sm">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <div>&copy; 2026 Wanderly Travel Agency. All Rights Reserved.</div>
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Help Center</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body></html>

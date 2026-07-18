@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tour Packages | Wanderly Travel Agency</title>
+<meta name="description" content="All-inclusive tour packages for adventure, family, honeymoon, luxury, beach, and wildlife travel.">
+<link rel="icon" href="data:,">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-travel sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Wander<span>ly</span></a>
+    <input type="checkbox" id="navToggle" class="nav-toggle-input" aria-hidden="true">
+    <label for="navToggle" class="navbar-toggler" role="button" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </label>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link active" href="packages.html">Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a class="btn btn-coral btn-sm" href="contact.html">Book Your Trip</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow" style="color:var(--brass-light);">All-Inclusive Options</div>
+    <h1 class="font-display">Find The Perfect Tour Package</h1>
+    <p>Hotel, meals, transport, and activities — all planned, all included.</p>
+  </div>
+</section>
+
+<!-- SPECIAL OFFER BANNER -->
+<section class="section-sm bg-teal">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 p-4 rounded-travel" style="background:rgba(255,255,255,0.06); border:1px dashed var(--brass);">
+      <div class="d-flex align-items-center gap-3">
+        <div class="stamp" style="width:70px;height:70px;font-size:0.7rem;">-20%<br>OFF</div>
+        <div>
+          <h5 class="font-display text-white mb-1">Limited-Time Early Bird Offer</h5>
+          <p class="mb-0 small" style="color:var(--sand-100);">Book any package before July 31 and save 20% — code <span class="font-mono text-brass">EARLYBIRD20</span></p>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-coral text-nowrap">Claim Offer</a>
+    </div>
+  </div>
+</section>
+
+<input type="radio" name="pkgFilter" id="f-pkg-all" class="filter-input" checked>
+<input type="radio" name="pkgFilter" id="f-pkg-adventure" class="filter-input">
+<input type="radio" name="pkgFilter" id="f-pkg-family" class="filter-input">
+<input type="radio" name="pkgFilter" id="f-pkg-honeymoon" class="filter-input">
+<input type="radio" name="pkgFilter" id="f-pkg-luxury" class="filter-input">
+<input type="radio" name="pkgFilter" id="f-pkg-beach" class="filter-input">
+<input type="radio" name="pkgFilter" id="f-pkg-wildlife" class="filter-input">
+
+<!-- CATEGORY FILTER -->
+<section class="section bg-cream pb-0">
+  <div class="container">
+    <div class="text-center mb-4">
+      <div class="eyebrow justify-content-center">Browse By Style</div>
+      <h2 class="font-display">Package Categories</h2>
+    </div>
+    <div class="text-center mb-5">
+      <label class="pill" for="f-pkg-all">All</label>
+      <label class="pill" for="f-pkg-adventure">Adventure</label>
+      <label class="pill" for="f-pkg-family">Family</label>
+      <label class="pill" for="f-pkg-honeymoon">Honeymoon</label>
+      <label class="pill" for="f-pkg-luxury">Luxury</label>
+      <label class="pill" for="f-pkg-beach">Beach</label>
+      <label class="pill" for="f-pkg-wildlife">Wildlife</label>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-cream pt-0">
+  <div class="container">
+    <div class="row g-4" id="pkgFullGrid">
+  <div class="col-sm-6 col-lg-4" data-pkg-category="adventure">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-pkg-alps/500/400" alt="Alpine Explorer">
+        <span class="price-tag">$2,199</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <div class="font-mono small text-brass mb-1"><i class="bi bi-clock"></i> 7D / 6N</div>
+        <h5 class="font-display mb-1">Alpine Explorer</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Interlaken, Switzerland</div>
+        <ul class="list-unstyled small text-secondary mb-3">
+          <li><i class="bi bi-building text-coral"></i> 4★ Mountain Lodge</li>
+          <li><i class="bi bi-egg-fried text-coral"></i> Breakfast & Dinner</li>
+          <li><i class="bi bi-car-front text-coral"></i> Private Coach</li>
+          <li><i class="bi bi-stars text-coral"></i> Hiking, Glacier Train</li>
+        </ul>
+        <a href="contact.html" class="btn btn-coral btn-sm w-100">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4" data-pkg-category="honeymoon">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-pkg-bali/500/400" alt="Bali Serenity">
+        <span class="price-tag">$899</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <div class="font-mono small text-brass mb-1"><i class="bi bi-clock"></i> 6D / 5N</div>
+        <h5 class="font-display mb-1">Bali Serenity</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Ubud, Indonesia</div>
+        <ul class="list-unstyled small text-secondary mb-3">
+          <li><i class="bi bi-building text-coral"></i> 5★ Villa Resort</li>
+          <li><i class="bi bi-egg-fried text-coral"></i> All Meals</li>
+          <li><i class="bi bi-car-front text-coral"></i> Private Car</li>
+          <li><i class="bi bi-stars text-coral"></i> Spa, Temple Tour</li>
+        </ul>
+        <a href="contact.html" class="btn btn-coral btn-sm w-100">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4" data-pkg-category="luxury">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-pkg-dubai/500/400" alt="Dubai Luxe">
+        <span class="price-tag">$1,599</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <div class="font-mono small text-brass mb-1"><i class="bi bi-clock"></i> 5D / 4N</div>
+        <h5 class="font-display mb-1">Dubai Luxe</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Dubai, UAE</div>
+        <ul class="list-unstyled small text-secondary mb-3">
+          <li><i class="bi bi-building text-coral"></i> 5★ Skyline Hotel</li>
+          <li><i class="bi bi-egg-fried text-coral"></i> Breakfast</li>
+          <li><i class="bi bi-car-front text-coral"></i> Chauffeur Service</li>
+          <li><i class="bi bi-stars text-coral"></i> Desert Safari, Yacht</li>
+        </ul>
+        <a href="contact.html" class="btn btn-coral btn-sm w-100">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4" data-pkg-category="honeymoon">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-pkg-paris/500/400" alt="Paris Romance">
+        <span class="price-tag">$1,299</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <div class="font-mono small text-brass mb-1"><i class="bi bi-clock"></i> 5D / 4N</div>
+        <h5 class="font-display mb-1">Paris Romance</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Paris, France</div>
+        <ul class="list-unstyled small text-secondary mb-3">
+          <li><i class="bi bi-building text-coral"></i> 4★ Boutique Hotel</li>
+          <li><i class="bi bi-egg-fried text-coral"></i> Breakfast</li>
+          <li><i class="bi bi-car-front text-coral"></i> Metro Pass + Transfers</li>
+          <li><i class="bi bi-stars text-coral"></i> River Cruise, Louvre</li>
+        </ul>
+        <a href="contact.html" class="btn btn-coral btn-sm w-100">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4" data-pkg-category="adventure">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-pkg-turkey/500/400" alt="Cappadocia Skies">
+        <span class="price-tag">$999</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <div class="font-mono small text-brass mb-1"><i class="bi bi-clock"></i> 4D / 3N</div>
+        <h5 class="font-display mb-1">Cappadocia Skies</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Cappadocia, Turkey</div>
+        <ul class="list-unstyled small text-secondary mb-3">
+          <li><i class="bi bi-building text-coral"></i> Cave Hotel</li>
+          <li><i class="bi bi-egg-fried text-coral"></i> Breakfast & Dinner</li>
+          <li><i class="bi bi-car-front text-coral"></i> Private Van</li>
+          <li><i class="bi bi-stars text-coral"></i> Hot Air Balloon</li>
+        </ul>
+        <a href="contact.html" class="btn btn-coral btn-sm w-100">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4" data-pkg-category="luxury">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-pkg-maldives/500/400" alt="Maldives Escape">
+        <span class="price-tag">$2,499</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <div class="font-mono small text-brass mb-1"><i class="bi bi-clock"></i> 6D / 5N</div>
+        <h5 class="font-display mb-1">Maldives Escape</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Malé, Maldives</div>
+        <ul class="list-unstyled small text-secondary mb-3">
+          <li><i class="bi bi-building text-coral"></i> 5★ Overwater Villa</li>
+          <li><i class="bi bi-egg-fried text-coral"></i> All Meals</li>
+          <li><i class="bi bi-car-front text-coral"></i> Speedboat Transfer</li>
+          <li><i class="bi bi-stars text-coral"></i> Snorkeling, Spa</li>
+        </ul>
+        <a href="contact.html" class="btn btn-coral btn-sm w-100">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4" data-pkg-category="family">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-pkg-orlando/500/400" alt="Family Fun Orlando">
+        <span class="price-tag">$1,799</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <div class="font-mono small text-brass mb-1"><i class="bi bi-clock"></i> 6D / 5N</div>
+        <h5 class="font-display mb-1">Family Fun Orlando</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Orlando, USA</div>
+        <ul class="list-unstyled small text-secondary mb-3">
+          <li><i class="bi bi-building text-coral"></i> 4★ Resort & Waterpark</li>
+          <li><i class="bi bi-egg-fried text-coral"></i> Breakfast</li>
+          <li><i class="bi bi-car-front text-coral"></i> Rental Van</li>
+          <li><i class="bi bi-stars text-coral"></i> Theme Parks</li>
+        </ul>
+        <a href="contact.html" class="btn btn-coral btn-sm w-100">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4" data-pkg-category="wildlife">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-pkg-safari/500/400" alt="Serengeti Safari">
+        <span class="price-tag">$2,899</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <div class="font-mono small text-brass mb-1"><i class="bi bi-clock"></i> 7D / 6N</div>
+        <h5 class="font-display mb-1">Serengeti Safari</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Serengeti, Tanzania</div>
+        <ul class="list-unstyled small text-secondary mb-3">
+          <li><i class="bi bi-building text-coral"></i> Luxury Tented Camp</li>
+          <li><i class="bi bi-egg-fried text-coral"></i> All Meals</li>
+          <li><i class="bi bi-car-front text-coral"></i> 4x4 Safari Jeep</li>
+          <li><i class="bi bi-stars text-coral"></i> Game Drives</li>
+        </ul>
+        <a href="contact.html" class="btn btn-coral btn-sm w-100">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4" data-pkg-category="beach">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-pkg-phuket/500/400" alt="Phuket Beach Break">
+        <span class="price-tag">$799</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <div class="font-mono small text-brass mb-1"><i class="bi bi-clock"></i> 5D / 4N</div>
+        <h5 class="font-display mb-1">Phuket Beach Break</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Phuket, Thailand</div>
+        <ul class="list-unstyled small text-secondary mb-3">
+          <li><i class="bi bi-building text-coral"></i> 4★ Beach Resort</li>
+          <li><i class="bi bi-egg-fried text-coral"></i> Breakfast</li>
+          <li><i class="bi bi-car-front text-coral"></i> Private Transfer</li>
+          <li><i class="bi bi-stars text-coral"></i> Island Hopping</li>
+        </ul>
+        <a href="contact.html" class="btn btn-coral btn-sm w-100">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4" data-pkg-category="luxury">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-pkg-amalfi/500/400" alt="Amalfi Coast Drive">
+        <span class="price-tag">$1,899</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <div class="font-mono small text-brass mb-1"><i class="bi bi-clock"></i> 6D / 5N</div>
+        <h5 class="font-display mb-1">Amalfi Coast Drive</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Amalfi, Italy</div>
+        <ul class="list-unstyled small text-secondary mb-3">
+          <li><i class="bi bi-building text-coral"></i> 4★ Cliffside Hotel</li>
+          <li><i class="bi bi-egg-fried text-coral"></i> Breakfast & Dinner</li>
+          <li><i class="bi bi-car-front text-coral"></i> Private Car</li>
+          <li><i class="bi bi-stars text-coral"></i> Coastal Drive, Wine Tasting</li>
+        </ul>
+        <a href="contact.html" class="btn btn-coral btn-sm w-100">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4" data-pkg-category="adventure">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-pkg-costarica/500/400" alt="Costa Rica Adventure">
+        <span class="price-tag">$1,399</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <div class="font-mono small text-brass mb-1"><i class="bi bi-clock"></i> 7D / 6N</div>
+        <h5 class="font-display mb-1">Costa Rica Adventure</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Guanacaste, Costa Rica</div>
+        <ul class="list-unstyled small text-secondary mb-3">
+          <li><i class="bi bi-building text-coral"></i> Eco Lodge</li>
+          <li><i class="bi bi-egg-fried text-coral"></i> Breakfast</li>
+          <li><i class="bi bi-car-front text-coral"></i> 4x4 Rental</li>
+          <li><i class="bi bi-stars text-coral"></i> Zipline, Rafting</li>
+        </ul>
+        <a href="contact.html" class="btn btn-coral btn-sm w-100">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4" data-pkg-category="wildlife">
+    <div class="card-postcard">
+      <div class="card-img-wrap">
+        <img src="https://picsum.photos/seed/wanderly-pkg-kruger/500/400" alt="Kruger Wildlife Trail">
+        <span class="price-tag">$2,199</span>
+      </div>
+      <div class="perf-strip"></div>
+      <div class="card-body-travel">
+        <div class="font-mono small text-brass mb-1"><i class="bi bi-clock"></i> 5D / 4N</div>
+        <h5 class="font-display mb-1">Kruger Wildlife Trail</h5>
+        <div class="small text-secondary mb-2"><i class="bi bi-geo-alt"></i> Kruger, South Africa</div>
+        <ul class="list-unstyled small text-secondary mb-3">
+          <li><i class="bi bi-building text-coral"></i> Safari Lodge</li>
+          <li><i class="bi bi-egg-fried text-coral"></i> All Meals</li>
+          <li><i class="bi bi-car-front text-coral"></i> Safari Vehicle</li>
+          <li><i class="bi bi-stars text-coral"></i> Big 5 Game Drives</li>
+        </ul>
+        <a href="contact.html" class="btn btn-coral btn-sm w-100">Book Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section bg-teal">
+  <div class="container text-center">
+    <h2 class="font-display">Let's Plan Your Perfect Vacation</h2>
+    <p class="mb-4" style="color:var(--sand-100);">Choose a package that matches your budget and travel goals.</p>
+    <a href="contact.html" class="btn btn-coral">Get A Custom Quote</a>
+  </div>
+</section>
+
+<footer class="footer-travel">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <a class="navbar-brand text-white mb-3 d-inline-block" href="index.html" style="font-size:1.5rem;">Wander<span class="text-coral">ly</span></a>
+        <p class="mb-3" style="max-width:300px;">Crafting unforgettable journeys since 2011 — from quiet beach mornings to city lights that never dim.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Company</h6>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Destinations</h6>
+        <ul>
+          <li><a href="destinations.html">Dubai</a></li>
+          <li><a href="destinations.html">Switzerland</a></li>
+          <li><a href="destinations.html">Turkey</a></li>
+          <li><a href="destinations.html">Bali</a></li>
+          <li><a href="destinations.html">Maldives</a></li>
+          <li><a href="destinations.html">Paris</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6>Newsletter</h6>
+        <p class="small mb-3">Travel tips & offers, once a week.</p>
+        <form class="newsletter-form">
+          <div class="d-flex flex-column gap-2">
+            <input type="email" class="newsletter-input rounded-1" placeholder="Your email" required>
+            <button type="button" class="btn btn-coral btn-sm">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <div>&copy; 2026 Wanderly Travel Agency. All Rights Reserved.</div>
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Help Center</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body></html>
